@@ -1,16 +1,17 @@
-//"Current Day 
-const DayofWeek = document.querySelector('[data-testid="currentDayOftheWeek"]');
-const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-const currentDate = new Date();
+document.addEventListener('DOMContentLoaded', function() {
+    const slackUserNameElement = document.querySelector('[data-testid="slackUserName"]');
+    const currentDayOfTheWeekElement = document.querySelector('[data-testid="currentDayOfTheWeek"]');
+    const currentUTCTimeElement = document.querySelector('[data-testid="currentUTCTime"]');
 
-const currentDayofWeek = daysOfWeek[currentDate.getDay()];
-DayofWeek.textContent = `Current (Day) ${currentDayofWeek}`;
+    // Get the current date and time
+    const now = new Date();
 
 
-//Current Time (UTC)"
-const currentUtcTime = document.querySelector('[data-testid="currentUTCTime"]');
+    // Set current day of the week
+    const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const dayOfWeek = daysOfWeek[now.getUTCDay()];
+    currentDayOfTheWeekElement.textContent = `Current (day) ${dayOfWeek}`;
 
-const currentTime = Date.now()
-
-currentUtcTime.textContent = `Time (UTC) ${currentTime}s`;
-
+    // Set current UTC time
+    currentUTCTimeElement.textContent = `Current (Time) ` + now.getTime() + "s";
+});

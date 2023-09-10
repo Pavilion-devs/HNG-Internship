@@ -1,44 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HNG Stage 1</title>
     <link rel="stylesheet" href="./style.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600;700&family=Ubuntu:wght@300;400;500;700&display=swap"
-        rel="stylesheet">
-    <title>HNG Stage 1 Project</title>
 </head>
-<body>
-    <header></header>
-    <div class="container">
-        <div class="slack-profile">
-            <div class="slack-name">
-                <h1 data-testid="slackUserName">Hi I am Pavilion</h1>
-                <div class="track">
-                    <h2 data-testid="myTrack">Frontend Track @HNG</h2>
-                </div>
-                <div class="github">
-                    <a href="https://github.com/Pavilion-devs/HNG-Internship" data-testid=“githubURL”>Github</a>
-                </div>
-            </div>
-            <div class="slack-picture">
-                <img src="./image 9.png" alt="Pavilion" data-testid="slackDisplayPicture">
-            </div>
-        </div>
-        <div class="date">
-            <div class="DayOftheWeek">
-                <span data-testid="currentDayOftheWeek"></span>
-            </div>
-            <div class="UTCTime">
-                <span data-testid="currentUTCTime"></span>
-            </div>
-        
-        </div>
-        
-    </div>
-    
 
+<body>
+    <div class="profile">
+        <h1 data-testid="slackUserName">Pavilion</h1>
+        <img src="./photo_6046346765243889841_x.jpg" alt="Pavilion" data-testid="slackDisplayImage">
+        <p data-testid="myTrack">Frontend @HNG</p>
+        <div class="time">
+            <p data-testid="currentDayOfTheWeek"></p>
+            <p data-testid="currentUTCTime"></p>
+        </div>
+
+        <a href="https://github.com/Pavilion-devs/HNG-Internship" target="_blank" data-testid="githubURL">My GitHub
+            Repository</a>
+    </div>
     <script src="./main.js"></script>
 </body>
+
 </html>
