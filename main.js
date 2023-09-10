@@ -1,6 +1,6 @@
 //"Current Day 
 const DayofWeek = document.querySelector('[data-testid="currentDayOftheWeek"]');
-const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednessday", "Thursday", "Friday", ""];
+const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const currentDate = new Date();
 
 const currentDayofWeek = daysOfWeek[currentDate.getDay()];
